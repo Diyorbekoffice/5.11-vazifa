@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.loading-page {
+    background: #0d0d0d;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter {
+    text-align: center;
+    position: relative;
+    width: 200px;
+}
+
+.counter p {
+    font-size: 40px;
+    font-weight: 100;
+    color: #f60d54;
+}
+
+.counter h1 {
+    color: white;
+    font-size: 60px;
+    margin-top: -10px;
+}
+
+.counter hr {
+    background: #f60d54;
+    border: none;
+    height: 1px;
+    width: 0%; 
+    transition: width 0.5s ease;
+}
+
+.counter h1.abs {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.counter h1.color {
+    width: 0px;
+    overflow: hidden;
+    color: #f60d54;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    display: none; 
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
